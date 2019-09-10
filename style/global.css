@@ -3,7 +3,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 body { background:#fff; color:#555; font-size:16px; font-family: Verdana, Arial, Helvetica, sans-serif,"微软雅黑"; }
 td,th,caption { font-size:14px; }
 img { border:none; }
-ol,ul,li { list-style:none; }
+ol,ul,li{ list-style:none; }
+a{text-decoration:none;}
 table { border-collapse:collapse; }
 /*html {overflow-y: scroll;} */
 
@@ -14,3 +15,21 @@ table { border-collapse:collapse; }
 
 /*content */
 #content{width:100%;height:auto;}
+
+/*navbar-nav*/
+.navbar-nav{
+	padding:.5rem .5rem; 
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction: normal;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-link{ display:block;padding:1.5rem .5rem;color: #666}
+
+.nav-link:hover{color: #333}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
