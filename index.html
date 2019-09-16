@@ -11,22 +11,15 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <body>
 <nav>
-<<<<<<< HEAD
 	<ul  class="navbar-nav">
 		<nav_list_com 
 			v-for="post in posts"
 			v-bind:post="post"
 		></nav_list_com>
-=======
-	<ul class="navbar-nav">
-		<li class="nav-item active"><a class="nav-link" v-bind:href="item1.link" >{{item1.title}}</a></li>
-		<li class="nav-item active"><a class="nav-link" v-bind:href="item2.link" >{{item2.title}}</a></li>
->>>>>>> 3f789b98923c1c1f0b3a13b661550c5f9b5161cc
 	</ul>
 </nav>
 
 <script type="text/javascript">
-<<<<<<< HEAD
 	var nav_list_com_template = { 
 		props:['post'],
 		template : '<li class="nav-item active"><a class="nav-link" v-bind:href="post.link" >{{ post.title }}</a></li>'
@@ -89,15 +82,5 @@
 		</div>
 	</div>
 </div>
-=======
-	var items = { item1 : {title : '首页',link : 'http://www.tombforest.xyz'} , item2 : {title : '像素画',link : 'http://www.tombforest.xyz'} };
-	var vm = new Vue({
-		el : ".navbar-nav",
-		data : items,
-	});
-</script>
-
-<div id="content"></div>
->>>>>>> 3f789b98923c1c1f0b3a13b661550c5f9b5161cc
 </body>
 </html>
