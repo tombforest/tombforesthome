@@ -3,11 +3,84 @@
 <head>
 	<title></title>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
 <script type="javascript"></script>
 <link rel="stylesheet" href="style/global.css">
 <link rel="stylesheet" href="style/app.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <body>
-	
-<div id="content"></div>
+<nav>
+	<ul  class="navbar-nav">
+		<nav_list_com 
+			v-for="post in posts"
+			v-bind:post="post"
+		></nav_list_com>
+	</ul>
+</nav>
+
+<script type="text/javascript">
+	var nav_list_com_template = { 
+		props:['post'],
+		template : '<li class="nav-item active"><a class="nav-link" v-bind:href="post.link" >{{ post.title }}</a></li>'
+	};
+	var vm = new Vue({
+		el : ".navbar-nav",
+		data : {
+			posts:[
+			{title:'首页',link:'http://www.tombforest.xyz'}, 
+			{title:'像素画',link:'http://www.tombforest.xyz'},
+			{title:'摄影',link:'http://www.tombforest.xyz'},
+			{title:'界面',link:'http://www.tombforest.xyz'},
+		]},
+		components:{
+			'nav_list_com': nav_list_com_template,
+		},
+	});
+
+</script>
+
+<div id="container">
+	<div class="home">
+		
+	</div>
+	<div class="row piexl">
+		<div class="col-lg-3 col-sx-3">
+			<div class="piexl-thumbnail">
+				<a href="#"><img src="images/p1.jpg" width="320"></a>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sx-3">
+			<div class="piexl-thumbnail">
+				<a href="#"><img src="images/p2.png" width="320"></a>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sx-3">
+			<div class="piexl-thumbnail">
+				<a href="#"><img src="images/p3.png" width="320"></a>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sx-3">
+			<div class="piexl-thumbnail">
+				<a href="#"><img src="images/p4.png" width="320"></a>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sx-3">
+			<div class="piexl-thumbnail">
+				<a href="#"><img src="images/p5.png" width="320"></a>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sx-3">
+			<div class="piexl-thumbnail">
+				<a href="#"><img src="images/p6.png" width="320"></a>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sx-3">
+			<div class="piexl-thumbnail">
+				<a href="#"><img src="images/p7.png" width="320"></a>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
