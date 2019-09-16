@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 /*home */
 .home{width: 100%;height:800px;margin:0 auto ;background: #fff url(../images/tombforest-logo.png) no-repeat center; text-align: center}
 
 /*piexl*/
 
 .piexl .piexl-thumbnail{height: 570px;}
+=======
+/*content */
+#content{width: 100%;height:800px;margin:0 auto ;background: #fff url(../images/tombforest-logo.png) no-repeat center; text-align: center}
+
+/**/
+>>>>>>> 3f789b98923c1c1f0b3a13b661550c5f9b5161cc

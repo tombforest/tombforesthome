@@ -13,18 +13,28 @@ table { border-collapse:collapse; }
 /*header */	
 #header{width: 100%;}
 
+<<<<<<< HEAD
 /*container */
 #container{width:100%;height:auto;}
 
 /*navbar-nav*/
 .navbar-nav{
 	padding:.5rem 2.5rem; 
+=======
+/*content */
+#content{width:100%;height:auto;}
+
+/*navbar-nav*/
+.navbar-nav{
+	padding:.5rem .5rem; 
+>>>>>>> 3f789b98923c1c1f0b3a13b661550c5f9b5161cc
 	-webkit-box-orient:horizontal;
 	-webkit-box-direction: normal;
 	display: flex;
 	flex-direction: row;
 }
 
+<<<<<<< HEAD
 .nav-link{ 
 	display:block;
 	padding:1.5rem .5rem;
@@ -33,11 +43,17 @@ table { border-collapse:collapse; }
 }
 
 .nav-link:hover{color: #666}
+=======
+.nav-link{ display:block;padding:1.5rem .5rem;color: #666; font-size:1.2rem}
+
+.nav-link:hover{color: #333}
+>>>>>>> 3f789b98923c1c1f0b3a13b661550c5f9b5161cc
 
 li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
+<<<<<<< HEAD
 
 
 .row{
@@ -79,3 +95,5 @@ img{display: block;margin: 0 auto}
 	.col-lg-3{width: 33.33%; }
 
 }
+=======
+>>>>>>> 3f789b98923c1c1f0b3a13b661550c5f9b5161cc
