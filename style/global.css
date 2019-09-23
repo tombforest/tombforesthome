@@ -44,6 +44,10 @@ li {
 	width: 100%;
 }
 
+/*响应式工具*/
+.img-responsive{display:block;max-width:100%;height:auto}
+
+
 
 /*text-center*/
 
